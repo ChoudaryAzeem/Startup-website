@@ -1,0 +1,945 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Raleway, sans-serif";
+}
+.floating-bar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    justify-content: space-evenly;
+    z-index: 2;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+.floating-bar i{
+    padding: 16px 18px;
+    align-self: flex-end;
+}
+.drop-down-menu{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 7px rgb(132, 132, 132);
+    background-color: white;
+}
+.drop-down-menu a{
+    
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+.drop-down-menu a:hover{
+    background-color: #cacaca;
+}
+.header {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(./images/front.jpg);
+}
+
+nav {
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.head-link {
+    flex: 1;
+    text-align: right;
+    padding: 6px 1px
+}
+
+.head-link ul li {
+    background-color: #ffff;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 17px;
+    margin-right: 24px;
+}
+
+.head-link ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.head-link ul li a:hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+.head-link-btn {
+    margin: -12px;
+    padding: 22px 13px;
+}
+
+.front-img {
+    width: 839px;
+}
+
+.text-box h1 {
+    margin-top: 3em;
+    margin-left: 1em;
+    font-weight: 100;
+    font-size: 64px;
+    color: #ffff;
+    font-family: sans-serif;
+}
+
+.text-box p {
+    color: #ffff;
+    margin-left: 4em;
+}
+
+.learnmore-btn {
+    margin-top: 2em;
+    margin-left: 5em;
+    background-color: rgb(184, 184, 184);
+    padding: 15px 20px;
+    border: none;
+}
+
+.learnmore-btn a {
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+}
+
+.learnmore-btn:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+/* ------------------------------------------------ 2nd section--------------------------------------------- */
+
+.company {
+    text-align: center;
+    padding: 128px 16px;
+}
+
+.company h1 {
+    margin-top: 2em;
+    font-weight: 300;
+}
+
+.row {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 12em; */
+}
+
+.company-col h2 {
+    margin-top: 2em;
+    font-weight: 300;
+
+}
+
+.company-col p {
+    margin-top: 2em;
+    font-weight: 300;
+}
+
+.company-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.company-icon {
+    font-size: 64px;
+}
+
+/* ------------------------------------- 3rd section----------------------------------------------- */
+.design {
+    background-color: rgb(237, 236, 235);
+    display: grid;
+}
+
+.second-row {
+    margin-left: 2em;
+    margin-top: 10em;
+    margin-bottom: 9em;
+}
+
+.second-row h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.viewourwork-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    padding: 16px 20px
+}
+
+.viewourwork-btn a {
+    text-decoration: none;
+}
+
+.design-col {
+    display: flex;
+}
+
+.second-row img {
+    width: 580px;
+    float: right;
+    margin-top: -10em;
+    margin-right: 2em;
+    border-radius: 5px;
+    box-shadow: -8px 9px 10px rgba(0, 0, 0, .2), inset
+}
+
+/* ----------------------------- 4th section ---------------------------------------*/
+.team-sec {
+    padding: 128px 16px;
+}
+
+.team .the-team {
+    padding: 32px 12px;
+}
+
+.team .the-team h3 {
+    text-align: center;
+    margin: 14px 0 6px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team .the-team p {
+    margin: 16px 5px;
+    text-align: center;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.member-card {
+    padding: 0 8px;
+    margin-bottom: 20px;
+}
+
+.member-card:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.member-card-h3 h3 {
+    margin: 12px 5px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-col {
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.card-opacity {
+    margin: 15px 5px;
+    opacity: 0.6;
+}
+
+.member-card-p2 {
+    margin: 15px 5px;
+    opacity: 0.8;
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn button {
+    padding: 11px 16px;
+    background-color: #f1f1f1;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn button:hover {
+    background-color: #cacaca;
+}
+
+.team-footer {
+    background-color: #616161;
+}
+
+.team-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 64px;
+    font-size: 25px;
+    color: white;
+}
+
+.team-footer-col {
+    text-align: center;
+}
+
+.team-footer-col h3 {
+    font-weight: 300;
+}
+
+.team-footer-col p {
+    font-size: 18px;
+}
+
+/* ---------------------------5th section------------------------------ */
+.work-sec {
+    padding: 128px 16px;
+}
+
+.work-sec-head-word {
+    text-align: center;
+}
+
+.work-sec-head-word h3 {
+    font-weight: 300;
+}
+
+.main-container {
+    padding: 10px 22px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* Project section */
+.row-1 #projects {
+    padding: 32px 12px;
+}
+
+.row-1 #projects h3 {
+    display: inline-block;
+    margin: 14px 0 6px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.project-img-col {
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.project-img-col-disp {
+    position: relative;
+}
+
+.row-1::after,
+#projects::after,
+.project-img::after,
+.project-img-col::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ------------------------------------- 6th Section ------------------------------------- */
+.skills {
+    background-color: rgb(237, 236, 235);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.skill-col-word {
+    margin-left: 1em;
+}
+
+.skill-col-word h2 {
+    font-weight: 300;
+    font-size: 28px
+}
+.skill-col-word p {
+    font-weight: 300;
+    font-size: 20px
+}
+
+.ourskill-design {
+    display: grid;
+    margin-right: 10em;
+    margin-top: -13em;
+    float: right;
+}
+
+.design-word-1 p {
+    background-color: #616161;
+    color: #ffff;
+    padding: 2px 122px;
+}
+
+.design-word-2 p {
+    background-color: #616161;
+    color: #ffff;
+    padding: 2px 122px;
+}
+
+.design-word-3 p {
+    background-color: #616161;
+    color: #ffff;
+    padding: 2px 122px;
+}
+
+.design-word-1 h3 {
+    font-weight: 300;
+}
+
+.design-word-2 h3 {
+    font-weight: 300;
+}
+
+.design-word-3 h3 {
+    font-weight: 300;
+}
+
+/* ------------------------------------- 6th Section ------------------------------------- */
+.price-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.price {
+    background-color: #616161;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.price-word {
+    color: #ffff;
+    text-align: center;
+}
+
+.price-card {
+    padding: 0 8px;
+    margin-top: 4em;
+    margin-bottom: 20px;
+}
+
+.price-card-h3 h3 {
+    margin: 12px 0px;
+    padding: 10px 85px;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price-card-h3 b {
+    font-size: 18px;
+}
+
+.packeges-1 {
+    background-color: black;
+    padding: 2.5em;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.packeges-2 {
+    background-color: rgb(255, 0, 0);
+    padding: 2.5em;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.packeges-3 {
+    background-color: black;
+    padding: 2.5em;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.price-card-col-1 {
+    background-color: #ffff;
+    margin-top: 3em;
+}
+
+.price-card-col-2 {
+    background-color: #ffff;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.price-card-col-3 {
+    background-color: #ffff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+}
+
+.price-card-p2 {
+    margin: 15px 5px;
+    opacity: 0.8;
+}
+
+.btn-2 {
+    width: 50%;
+}
+
+.btn-2 {
+    padding: 25px 33px;
+    background-color: #000000;
+    color: #ffff;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.btn-2 button:hover {
+    background-color: #bab5b5;
+}
+
+.sign-up-btn {
+    padding: 27px 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-btn a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+/* ----------------------------------------8th Section---------------------------------------------- */
+.contact {
+    padding: 128px 16px;
+    background-color: #edebec;
+}
+
+.contact-word {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.contact-word h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.contact-word p {
+    font-size: 18px;
+}
+
+.location-phone {
+    margin-left: 1em;
+}
+
+.input-box {
+    display: grid;
+    padding: 17px 1px;
+    gap: 16px;
+
+}
+
+.input-box input {
+    padding: 10px;
+    border: 1px solid #ccc !important;
+}
+
+.send-message-btn {
+    width: fit-content !important;
+    height: auto !important;
+    cursor: pointer;
+    padding: 11px 11px;
+    background-color: #000;
+    border-style: none;
+    color: #ffff;
+}
+
+.send-message-btn a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.map {
+    margin-top: 4em;
+}
+
+.map img {
+    width: 100%;
+}
+
+/* <!-- ----------------------------Last Section----------------------------------- --> */
+
+.last {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    background-color: #000;
+}
+
+.last-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gotop-btn {
+    background-color: #ffff;
+    border-style: none;
+    padding: 11px 11px;
+}
+
+.gotop-btn a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 24px;
+    margin-top: 0.5em;
+}
+
+.links a {
+    color: #ffff;
+}
+
+.thanks {
+    text-align: center;
+    color: #ffff;
+}
+
+.thanks p {
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+/* ---------------------------------------Media screen(770px)---------------------------------------------------------- */
+
+@media only screen and (max-width: 770px) {
+    .text-box h1 {
+        font-size: 36px;
+        margin-top: 6em;
+        padding: 2px 25px;
+    }
+
+    .head-link {
+        padding: 4px 1px;
+    }
+
+    .head-link-btn {
+        padding: 10px 6px;
+    }
+
+    .price-box {
+        display: inline-block;
+        justify-content: stretch;
+    }
+
+    .price-card {
+        margin-top: 4em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .price-card-col-2 {
+        margin-top: -1em;
+        margin-bottom: 0;
+    }
+
+    .team-footer {
+        display: grid;
+        gap: 25px;
+        padding: 50px;
+    }
+
+    .price-card-col-3 {
+        margin-top: -1em;
+    }
+
+    .row {
+        display: grid;
+    }
+
+    .company-col {
+        margin-top: 1em;
+    }
+
+    .second-row img {
+        width: 551px;
+        float: left;
+        margin-top: 4em;
+        margin-right: 2em;
+        border-radius: 5px;
+    }
+    .sign-up-btn {
+        padding: 27px 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-member{
+        display: inline-block;
+    }
+    .member-card {
+        width: 100%;
+        padding: 9px 10px;
+        margin-bottom: 20px;
+        margin-left: -8px;
+    }
+    .project-img {
+        display: table-cell;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .design-word-1 h3{
+        font-weight: 300;
+        font-size: 13px;
+    }
+    .design-word-2 h3{
+        font-weight: 300;
+        font-size: 13px;
+    }
+    .design-word-3 h3{
+        font-weight: 300;
+        font-size: 13px;
+    }
+    .design-word-1 p {
+        background-color: #616161;
+        color: #ffff;
+        padding: 0px 60px;
+    }
+    .design-word-2 p {
+        background-color: #616161;
+        color: #ffff;
+        padding: 0px 60px;
+    }
+    .design-word-3 p {
+        background-color: #616161;
+        color: #ffff;
+        padding: 0px 60px;
+    }
+    .ourskill-design {
+        margin-right: 4em;
+        margin-top: -11em;
+        float: right;
+    }
+    .skill-col-word p{
+        line-break: auto;
+        margin-left: 1em;
+        font-size: 14px;
+    }
+    .skill-col-word h2 {
+        font-weight: 300;
+        font-size: 20px
+    }
+    .btn-2 {
+        padding: 18px 26px;
+        background-color: #000000;
+        color: #ffff;
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+    .floating-bar{
+        display: flex;
+    }
+    .floating-bar:hover .drop-down-menu{
+        display: flex;
+    }
+    .head-link ul li {
+        background-color: #ffff;
+        list-style: none;
+        display: none;
+        position: none;
+        text-align: center;
+        margin-top: 17px;
+        margin-right: 24px;
+    }
+}
+
+/* -------------------------------------------------Media screen(600px)---------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .ourskill-design {
+        display: contents;
+        margin-right: 4em;
+        margin-top: -11em;
+        float: right;
+    }
+    .head-link ul li {
+        background-color: #ffff;
+        list-style: none;
+        display: none;
+        position: none;
+        text-align: center;
+        margin-top: 17px;
+        margin-right: 24px;
+    }
+    .text-box h1 {
+        margin-top: 6em;
+        font-size: 36px;
+        padding: 2px 25px;
+    }
+
+    .head-link {
+        padding: 4px 1px;
+    }
+    .member-card {
+        width: 100%;
+        padding: 9px 10px;
+        margin-bottom: 20px;
+        margin-left: -8px;
+    }
+    .head-link-btn {
+        padding: 10px 6px;
+    }
+
+    .price-box {
+        width: 100%;
+        display: inline-block;
+        justify-content: stretch;
+    }
+
+    .price-card {
+        margin-top: 4em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .price-card-col-2 {
+        margin-top: -1em;
+        margin-bottom: 0;
+    }
+
+    .team-footer {
+        display: grid;
+        gap: 25px;
+        padding: 50px;
+    }
+
+    .price-card-col-3 {
+        margin-top: -1em;
+    }
+
+    .row {
+        display: grid;
+    }
+
+    .company-col {
+        margin-top: 1em;
+    }
+
+    .second-row img {
+        width: 100%;
+        float: left;
+        margin-top: 4em;
+        margin-right: 2em;
+        border-radius: 5px;
+    }
+    .sign-up-btn {
+        padding: 27px 107px;
+    }
+    .design-word-1 h3{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .design-word-1 h3{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .design-word-3 h3{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .design-word-1 p {
+        background-color: #616161;
+        color: #ffff;
+        padding: 0px 30px;
+    }
+    .design-word-2 p {
+        background-color: #616161;
+        color: #ffff;
+        padding: 0px 30px;
+    }
+    .design-word-3 p {
+        background-color: #616161;
+        color: #ffff;
+        padding: 0px 30px;
+    }
+    .project-img {
+        display: table-cell;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .skill-col-word p{
+        line-break: auto;
+        font-size: 15px;
+        margin-left: 1em;
+    }
+    .skill-col-word h2 {
+        font-weight: 300;
+        font-size: 22px
+    }
+    .floating-bar{
+        display: flex;
+    }
+    .floating-bar:hover .drop-down-menu{
+        display: flex;
+    }
+    .btn-2 {
+        padding: 18px 26px;
+        background-color: #000000;
+        color: #ffff;
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+    .thanks p{
+        font-size: 15px;
+
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 19px;
+        margin-top: 0.5em;
+    }
+}
